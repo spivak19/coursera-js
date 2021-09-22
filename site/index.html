@@ -1,44 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: lightgray;">
 <head>
 	<meta charset="utf-8">
-	<title>Hello</title>
+
+	<style>
+		#logo{
+			display: block;
+			position: relative;
+			top: 0px;
+			left: 0px;
+			margin: 0px;
+			padding: 0px;
+			width: 80px;
+			height: 80px;
+		}
+		
+		h1{
+			clear: left;
+		}
+
+		#p1{
+			background-color: blue;
+			width: 100px;
+			height: 100px;
+			margin-right: auto;			
+			margin-left: auto;			
+
+		}
+
+		#p2{
+			background-color: green;
+			width: 100px;
+			height: 100px;	
+			margin-right: auto;			
+			margin-left: auto;	
+		}
+
+
+		#p3{
+			background-color: yellow;
+			width: 100px;
+			height: 100px;
+			margin-right: auto;			
+			margin-left: auto;	
+		}
+
+
+		#p4{
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		@media(max-width: 1000px){
+			h1{
+				text-align: center;
+				font-size: 100px;
+			}
+			#p1, #p2, #p3, #p4{
+				width: 250px;
+				height: 250px;
+				margin-bottom: 80px;
+			}
+			#logo{
+				width: 20%;
+				height: 20%;
+			}
+		}
+
+	</style>
+
+
+	<title> Spivaks website</title>
 </head>
 <body>
-<h1 style ="color: red;
-			font-size: 60px;
-			text-align: center;
-			font-family: sans-serif;">
-	Hello world
-</h1>
 
-<p style = "color: black;
-			font-size: 20px;
-			font-family: sans-serif;
-			text-align: center;
-			margin-top: 70px;
-			margin-bottom: 50px">
+	<a href="index.html" target="_blank">
+		<img id="logo" src="logo1.png" alt="spivak">
+	</a>
 
-	this is a new repository
-</p>
+	<h1>
+		Main Header
+	</h1>
+
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	
 
 
-<p style = "color: black;
-			font-size: 15px;
-			font-family: sans-serif;">
 
-	this is a new repository
-</p>
+	<footer>
+		<hr>
+		<p  style = "text-align: center;
+					 font-family: sans-serif;
+					 color: blue;"
+			onclick = "alert('This is the footer...');">
 
-<footer>
-	<hr>
-	<p  style = "text-align: center;
-				 font-family: sans-serif;"
-		onclick = "alert('Emailing this is Useless...');">
-
-	Support: email@gmail.com	
-	</p>
-
+		This is the footer
+		</p>
 </footer>
 </body>
 </html>
